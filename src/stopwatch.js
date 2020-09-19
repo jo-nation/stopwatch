@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 export const Stopwatch = ({ interval }) => {
     const [intervalId, setIntervalId] = useState(null);
-    const [totalMilliseconds, setTotalMilliseconds] = useState(58000);
+    const [totalMilliseconds, setTotalMilliseconds] = useState(0);
 
     const getFormattedTime = () => {
         const milliseconds = `${totalMilliseconds % 1000}`.substring(0, 2).padStart(2, "0");
